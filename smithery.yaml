@@ -1,0 +1,14 @@
+startCommand:
+  type: stdio
+  configSchema:
+    type: object
+    properties:
+      dataDir:
+        type: string
+        description: "Directory to persist reflexion data (defaults to ~/.agent-reflexion/)"
+  commandFunction: |-
+    (config) => ({
+      command: 'npx',
+      args: ['agent-reflexion-mcp'],
+      env: config.dataDir ? { REFLEXION_DATA_DIR: config.dataDir } : {}
+    })

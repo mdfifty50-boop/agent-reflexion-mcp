@@ -1,0 +1,42 @@
+{
+  "name": "agent-reflexion-mcp",
+  "description": "Agent self-improvement and reflection MCP server. Agents log decisions and outcomes, analyze performance patterns, get actionable improvement suggestions, track metrics, and set goals — creating a continuous learning loop.",
+  "version": "0.1.0",
+  "tools": [
+    {
+      "name": "log_decision",
+      "description": "Record a decision with context, reasoning, and expected outcome"
+    },
+    {
+      "name": "log_outcome",
+      "description": "Record the actual outcome of a previous decision"
+    },
+    {
+      "name": "analyze_patterns",
+      "description": "Analyze decision patterns — success rates, failure modes, confidence calibration"
+    },
+    {
+      "name": "get_suggestions",
+      "description": "Get specific improvement suggestions based on historical performance"
+    },
+    {
+      "name": "track_metric",
+      "description": "Track a named metric over time with automatic trend detection"
+    },
+    {
+      "name": "get_performance_report",
+      "description": "Generate a comprehensive performance summary"
+    },
+    {
+      "name": "set_goal",
+      "description": "Set an improvement goal with target metric and deadline"
+    },
+    {
+      "name": "check_goals",
+      "description": "Check progress against active improvement goals"
+    }
+  ],
+  "transport": "stdio",
+  "runtime": "node",
+  "license": "MIT"
+}

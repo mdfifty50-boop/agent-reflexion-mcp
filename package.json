@@ -1,0 +1,40 @@
+{
+  "name": "agent-reflexion-mcp",
+  "version": "0.1.0",
+  "mcpName": "io.github.mdfifty50-boop/agent-reflexion",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mdfifty50-boop/agent-reflexion-mcp"
+  },
+  "description": "MCP server for agent self-improvement — decision logging, pattern analysis, performance tracking, and goal-based learning loops",
+  "type": "module",
+  "main": "src/index.js",
+  "bin": {
+    "agent-reflexion-mcp": "src/index.js"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "test": "node --test src/**/*.test.js"
+  },
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "agent",
+    "reflexion",
+    "self-improvement",
+    "learning-loop",
+    "decision-log",
+    "performance-tracking",
+    "ai-agent",
+    "model-context-protocol"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "zod": "^3.24.0"
+  }
+}
